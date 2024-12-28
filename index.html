@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cosmic Clicker: The Singularity Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>How to Play</h3>
+            <ol>
+                <li><b>Click the "Click for QP" button</b> to gather Quantum Particles (QP).</li>
+                <li><b>Buy Upgrades</b> to increase your QP per click.</li>
+                <li><b>Buy Automated Collectors</b> to generate QP over time, even when you're not clicking!</li>
+                <li><b>Cosmic Collapse:</b>
+                    <ul>
+                        <li>Once you have enough QP (at least 1000), click "Cosmic Collapse" to reset your QP, upgrades, and collectors.</li>
+                        <li>You will gain a <b>Singularity Shard (SS)</b> for each collapse.</li>
+                        <li>Each SS gives you a <b>permanent 5% multiplicative bonus</b> to your base QP per click.</li>
+                        <li>You also get a <b>scaling bonus</b> based on how much QP you had when you collapsed. The more QP, the bigger the bonus! This encourages you to reach higher amounts before collapsing.</li>
+                        <li>Your Energy Per Click will be significantly boosted after each collapse, allowing you to progress much faster.</li>
+                    </ul>
+                </li>
+                <li><b>Power the Singularity Engine:</b> Contribute QP to the engine to reach a major milestone.</li>
+                <li><b>The Goal:</b> Power the Singularity Engine to its maximum capacity. This will take a LOT of time and dedication!</li>
+                <li><b>Tip:</b> Experiment with different upgrade and collector combinations to find the most efficient way to gather QP.</li>
+            </ol>
+        </div>
+
+        <div class="main-content">
+            <div class="resources">
+                <p>Quantum Particles: <span id="qpCount">0</span></p>
+                <p>Energy Per Click: <span id="energyPerClick">1</span></p> <p>Singularity Shards: <span id="ssCount">0</span></p>
+            </div>
+
+            <div class="core-actions">
+                <button id="clickButton">Click for QP</button>
+                <button id="cosmicCollapseButton">Cosmic Collapse</button>
+            </div>
+
+            <div class="upgrades">
+                <h3>Upgrades</h3>
+                <div id="qpUpgrades">
+                    <button data-type="click" data-name="Click Efficiency" data-cost="10" data-effect="1">Buy Click Efficiency (Cost: 10 QP, +1 QP/Click)</button>
+                    <button data-type="click" data-name="Click Amplifier" data-cost="100" data-effect="5">Buy Click Amplifier (Cost: 100 QP, +5 QP/Click)</button>
+                </div>
+            </div>
+
+            <div class="collectors">
+                <h3>Automated Collectors</h3>
+                <div id="qpCollectors">
+                    <button data-type="collector" data-name="Subatomic Tunneler" data-cost="50" data-effect="0.1">Buy Subatomic Tunneler (Cost: 50 QP, +0.1 QP/Second)</button>
+                    <button data-type="collector" data-name="Quantum Entangler" data-cost="250" data-effect="1">Buy Quantum Entangler (Cost: 250 QP, +1 QP/Second)</button>
+                </div>
+            </div>
+
+            <div class="singularity-engine">
+                <h3>Singularity Engine</h3>
+                <p>Progress: <span id="engineProgress">0</span> / 1000</p>
+                <button id="powerEngineButton">Contribute QP to Engine (Cost: 1000 QP)</button>
+            </div>
+            <div class="ad-container">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+                    data-ad-slot="yyyyyyyyyy"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
